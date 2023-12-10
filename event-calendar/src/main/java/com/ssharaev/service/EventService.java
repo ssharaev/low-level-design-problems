@@ -40,6 +40,7 @@ public class EventService {
         }
         event.addParticipants( participants );
         eventRepository.save( event );
+        return event;
     }
 
 
@@ -55,7 +56,7 @@ public class EventService {
         Map<EventParticipant, List<TimePeriod>> participantSlots = participants.stream()
             .collect( Collectors.toMap( Function.identity(),
                 eventParticipant -> eventParticipant.getAvailableSlotsForDate( eventDate, membersCount )) );
-        return EventParticipant.findAvailableSlots( participantSlots );
+        return EventParticipant.findAvailableSlots( participantSlots, membersCount );
 
     }
 

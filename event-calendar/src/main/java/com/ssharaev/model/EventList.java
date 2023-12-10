@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentSkipListSet;
+import java.util.stream.Collectors;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -44,7 +45,7 @@ public class EventList {
     public List<Event> getAllEvents() {
         return events.values().stream()
             .flatMap( Collection::stream )
-            .toList();
+            .collect( Collectors.toList());
     }
 
     public boolean isSlotAvailable(LocalDate date, TimePeriod timePeriod) {
