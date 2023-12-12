@@ -1,12 +1,12 @@
-package com.ssharaev.service;
+package com.ssharaev.event.calendar.service;
 
 import java.util.List;
 
-import com.ssharaev.model.Team;
-import com.ssharaev.model.TimePeriod;
-import com.ssharaev.model.User;
-import com.ssharaev.repository.TeamRepository;
-import com.ssharaev.repository.UserRepository;
+import com.ssharaev.event.calendar.model.Team;
+import com.ssharaev.event.calendar.model.TimePeriod;
+import com.ssharaev.event.calendar.model.User;
+import com.ssharaev.event.calendar.repository.TeamRepository;
+import com.ssharaev.event.calendar.repository.UserRepository;
 import lombok.AllArgsConstructor;
 
 

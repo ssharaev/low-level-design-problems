@@ -1,4 +1,4 @@
-package com.ssharaev.service;
+package com.ssharaev.event.calendar.service;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -6,10 +6,10 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import com.ssharaev.model.Event;
-import com.ssharaev.model.EventParticipant;
-import com.ssharaev.model.TimePeriod;
-import com.ssharaev.repository.EventRepository;
+import com.ssharaev.event.calendar.model.Event;
+import com.ssharaev.event.calendar.model.EventParticipant;
+import com.ssharaev.event.calendar.model.TimePeriod;
+import com.ssharaev.event.calendar.repository.EventRepository;
 import lombok.AllArgsConstructor;
 
 /*

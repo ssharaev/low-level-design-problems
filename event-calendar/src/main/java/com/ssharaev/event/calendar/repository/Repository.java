@@ -1,9 +1,9 @@
-package com.ssharaev.repository;
+package com.ssharaev.event.calendar.repository;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.ssharaev.model.Entity;
+import com.ssharaev.event.calendar.model.Entity;
 
 public abstract class Repository<T extends Entity> {
 

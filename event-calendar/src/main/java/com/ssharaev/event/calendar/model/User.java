@@ -1,4 +1,4 @@
-package com.ssharaev.model;
+package com.ssharaev.event.calendar.model;
 
 import java.time.LocalDate;
 import java.util.List;
